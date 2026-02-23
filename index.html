@@ -362,6 +362,42 @@
             margin-bottom: 24px;
         }
 
+        /* Calendly Embed */
+        .calendly-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        .calendly-section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .calendly-section h3 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            text-align: center;
+        }
+        .calendly-section > p {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        .calendly-inline-widget {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--surface);
+        }
+
         /* Responsive */
         @media (max-width: 640px) {
             .stats { grid-template-columns: 1fr; }
@@ -377,7 +413,7 @@
     <nav>
         <div class="nav-inner">
             <div class="nav-logo">SaaS Revenue Research</div>
-            <a href="mailto:andrew@krainii.com" class="nav-link">Questions? Get in touch</a>
+            <a href="#book" class="nav-link">Book a call</a>
         </div>
     </nav>
 
@@ -387,7 +423,7 @@
         <h1>Understanding Revenue Data Accuracy Across SaaS</h1>
         <p>We’re interviewing finance and operations leaders to map how SaaS companies manage revenue reconciliation, data accuracy, and cross-system alignment.</p>
         <div class="cta-wrap">
-            <a href="mailto:andrew@krainii.com?subject=Revenue%20Data%20Research%20%E2%80%94%20Interested%20in%20Participating" class="cta-btn">Interested? Reach out to participate</a>
+            <a href="#book" class="cta-btn">Book a 20-min interview</a>
         </div>
     </div>
 
@@ -488,10 +524,14 @@
         </div>
     </section>
 
-    <!-- CTA mid-page -->
-    <div class="cta-section">
-        <p>Ready to share your perspective? It only takes 20 minutes.</p>
-        <a href="mailto:andrew@krainii.com?subject=Revenue%20Data%20Research%20%E2%80%94%20Interested%20in%20Participating" class="cta-btn">Get in touch</a>
+    <div class="divider"><hr></div>
+
+    <!-- Calendly Embed -->
+    <div class="calendly-section" id="book">
+        <h2>Schedule Your Interview</h2>
+        <h3>Pick a time that works for you</h3>
+        <p>20 minutes. No prep needed. Choose a slot below.</p>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/andrew-krainii/ai-research-interview" style="min-width:320px;height:700px;"></div>
     </div>
 
     <div class="divider"><hr></div>
@@ -539,6 +579,9 @@
         <p>&copy; 2026 All rights reserved.</p>
         <a href="mailto:andrew@krainii.com">andrew@krainii.com</a>
     </footer>
+
+    <!-- Calendly Widget Script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 </body>
 </html>
